@@ -1,0 +1,1 @@
+This directory contains all the training and test files of the project. However, when downloaded in local they should always be kept with the main python file "train.py"
