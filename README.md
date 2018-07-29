@@ -11,3 +11,8 @@ Using environmental data collected by various U.S. Federal Government agenciesâ€
 An understanding of the relationship between climate and dengue dynamics can improve research initiatives and resource allocation to help fight life-threatening pandemics.
 
 The data comes from multiple sources aimed at supporting the Predict the Next Pandemic Initiative. Dengue surveillance data is provided by the U.S. Centers for Disease Control and prevention, as well as the Department of Defense's Naval Medical Research Unit 6 and the Armed Forces Health Surveillance Center, in collaboration with the Peruvian government and U.S. universities. Environmental and climate data is provided by the National Oceanic and Atmospheric Administration (NOAA), an agency of the U.S. Department of Commerce.
+
+This project is a participation attempt in the competition <b>DengAI: Predicting Disease Spread
+Hosted By DrivenData </b>
+
+Competition Link : https://www.drivendata.org/competitions/44/dengai-predicting-disease-spread/page/80/
