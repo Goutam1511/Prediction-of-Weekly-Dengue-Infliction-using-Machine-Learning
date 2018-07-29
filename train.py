@@ -28,22 +28,22 @@ df1 = df[df['city']=="sj"]	#split the dataframes by cities
 df2 = df[df['city']=="iq"]
 
 #Data Visualization
-#g = sns.heatmap(df1.corr(),annot=True,fmt=".1f")	#Visualize the heatmap of the Correlation matrix for SJ city
-#g.set_xticklabels(g.get_xticklabels(),rotation = 90)	#Change the label rotation
-#g.set_yticklabels(g.get_yticklabels(),rotation = 0)
-#sns.plt.show()
-#g = sns.heatmap(df2.corr(),annot=True,fmt=".1f")	#Visualize the heatmap of the Correlation matrix for IQ city
-#g.set_xticklabels(g.get_xticklabels(),rotation = 90)	#Change the label rotation
-#g.set_yticklabels(g.get_yticklabels(),rotation = 0)
-#sns.plt.show()
-#barplt=abs(df1.corr()).total_cases.drop('total_cases').sort_values().plot.barh() #Bar plot of all feature Correlations against 'Total Cases' for SJ city
-#corrtcasesj = abs(df1.corr()).total_cases.drop('total_cases').sort_values()
+g = sns.heatmap(df1.corr(),annot=True,fmt=".1f")	#Visualize the heatmap of the Correlation matrix for SJ city
+g.set_xticklabels(g.get_xticklabels(),rotation = 90)	#Change the label rotation
+g.set_yticklabels(g.get_yticklabels(),rotation = 0)
+sns.plt.show()
+g = sns.heatmap(df2.corr(),annot=True,fmt=".1f")	#Visualize the heatmap of the Correlation matrix for IQ city
+g.set_xticklabels(g.get_xticklabels(),rotation = 90)	#Change the label rotation
+g.set_yticklabels(g.get_yticklabels(),rotation = 0)
+sns.plt.show()
+barplt=abs(df1.corr()).total_cases.drop('total_cases').sort_values().plot.barh() #Bar plot of all feature Correlations against 'Total Cases' for SJ city
+corrtcasesj = abs(df1.corr()).total_cases.drop('total_cases').sort_values()
 #print corrtcasesj #also print the correlations
-#sns.plt.show()
-#barplt=abs(df2.corr()).total_cases.drop('total_cases').sort_values().plot.barh()	#Bar plot of all feature Correlations against 'Total Cases' for IQ city
-#corrtcaseiq = abs(df2.corr()).total_cases.drop('total_cases').sort_values()
+sns.plt.show()
+barplt=abs(df2.corr()).total_cases.drop('total_cases').sort_values().plot.barh()	#Bar plot of all feature Correlations against 'Total Cases' for IQ city
+corrtcaseiq = abs(df2.corr()).total_cases.drop('total_cases').sort_values()
 #print corrtcaseiq
-#sns.plt.show()
+sns.plt.show()
 
 #Feature Selection
 listfeatures=['sp_humid','dew_tmp','st_avg_tmp','min_tmp','mean_tmp','avg_tmp','rel_humid','ppt_kg_per_m2','max_tmp','st_min_tmp','st_max_tmp']	#From the bar plot selecting the Features that are most prominent for both the cities
